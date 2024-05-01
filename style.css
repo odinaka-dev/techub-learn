@@ -1,0 +1,340 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+.item {
+  margin-left: 15px;
+}
+.item2,
+.item3,
+.item4 {
+  margin-right: 40px;
+}
+.languages {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px 20px;
+  margin: 25px 10px;
+  cursor: pointer;
+}
+.todos-list i {
+  cursor: pointer;
+}
+.languages i {
+  padding-right: 7px;
+}
+.grid-features {
+  background: rgba(0, 0, 0, 0.6) url(./asset/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-blend-mode: darken;
+  color: white;
+  text-transform: capitalize;
+  text-align: left;
+  border-radius: 4px;
+}
+.grid-feature p,
+.grid-features p {
+  line-height: 1.6;
+}
+
+/*the username styling effects  */
+.signup-page {
+  display: none;
+  max-width: 425px;
+  margin: 40px auto;
+}
+.signup input {
+  display: block;
+}
+.username,
+.email,
+.password {
+  width: 330px;
+  margin: 20px auto;
+  margin-left: 5px;
+  padding: 8px 2px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgba(46, 45, 45, 0.575);
+  background-color: rgb(235, 234, 234);
+  border-bottom: 1px solid black;
+  outline: none;
+  cursor: pointer;
+}
+.submit {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+.tick,
+.warning {
+  display: none;
+}
+.success {
+  border-bottom: 1px solid limegreen;
+}
+.failed {
+  border-bottom: 1px solid crimson;
+}
+.footer-total div {
+  padding: 0px 5px;
+}
+.footer-one p {
+  padding: 8px 0px;
+  line-height: 1.6;
+}
+/* roadmap icon hover effects */
+.road svg:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+/* the features external styles */
+.documentation-sub-lists .doclist {
+  padding: 10px 5px;
+  margin: 0px 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+}
+.documentation-sub-lists .doclist:hover,
+.doclist:active {
+  /* transform: scale(1.1); */
+  color: black;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  background-color: white;
+  transition: 0.5s ease-in;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mobile-grid-featured {
+  display: none;
+}
+.road-maps {
+  display: block;
+}
+.roadmaps-mobile {
+  display: none;
+}
+.about-roadmap {
+  display: none;
+}
+/* the footer styles */
+footer.mobile-footer {
+  display: none;
+}
+/* the mobile responsive navigation bar design */
+/* 1000 */
+/* 860 */
+@media screen and (max-width: 700px){
+  .list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 50%;
+    text-align: center;
+    background-color: black;
+    padding: 25px 0px;
+  }
+  .show-item {
+    display: flex;
+    z-index: 1;
+  }
+  .item {
+    margin-left: 0px;
+    padding: 10px 30px;
+  }
+  .item2,
+  .item3,
+  .item4 {
+    margin-right: 0px;
+  }
+  .menu-bar svg {
+    display: block;
+    margin-right: 20px;
+  }
+  /* the footer styles */
+  footer.footer-desktop {
+    display: none;
+  }
+  footer.mobile-footer {
+    display: block;
+  }
+  .mani-grid {
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  .contact-text-p {
+    text-align: center;
+  }
+}
+/* 640 */
+@media screen and (max-width: 450px) {
+  /* * {
+        margin: 0px auto;
+        max-width: 450px;
+    } */
+  .list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 90%;
+    text-align: center;
+    background-color: black;
+    padding: 25px 0px;
+  }
+  .show-item {
+    display: flex;
+    z-index: 1;
+  }
+  .item {
+    margin-left: 0px;
+    padding: 10px 30px;
+  }
+  .item2,
+  .item3,
+  .item4 {
+    margin-right: 0px;
+  }
+  .menu-bar svg {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .grid-featured {
+    display: none;
+  }
+  /* the  homepage css viewport styles */
+  .mobile-grid-featured {
+    display: block;
+  }
+  .mobile-banner {
+    background: #000000a6
+      url(https://i.pinimg.com/236x/0e/07/80/0e0780cec5095b930a6e5043d683ec03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  .mobile-featured,
+  .mobile-banner-main {
+    max-width: 360px;
+    margin: 0px auto;
+  }
+  /* the roadmap mobile responsive styles */
+  .road-maps {
+    display: none;
+  }
+  .roadmaps-mobile {
+    display: block;
+  }
+  .mobile-road-banner {
+    background: rgba(0, 0, 0, 0.486)
+      url(https://i.pinimg.com/236x/5c/1a/1c/5c1a1c8ac126433c1c8588f0afaf456d.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-blend-mode: darken;
+  }
+  .mobile-road-bannertext {
+    margin: 0px auto;
+    max-width: 400px;
+  }
+  .road-maps-icons {
+    margin: 0px auto;
+    max-width: 340px;
+  }
+  .minus {
+    display: none;
+  }
+  .about-roadmap {
+    display: block;
+    background: #000000cb
+      url(https://i.pinimg.com/236x/7c/17/75/7c1775d5b9c8e232be7e59ee43e9b24b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  .about-roadmap h1 {
+    letter-spacing: 5px;
+  }
+  .about-roadmap p {
+    line-height: 1.6;
+  }
+  /* the features styles for the mobile view. */
+
+  
+  /* the footer styles for the mobile responsive */
+  footer.footer-desktop {
+    display: none;
+  }
+  footer.mobile-footer {
+    display: block;
+  }
+  .mani-grid {
+    margin: 0px auto;
+    max-width: 350px;
+  }
+  /* the contact us styles */
+  .contactPage {
+    max-width: 390px;
+    margin: 0px auto;
+  }
+  .contact-text-p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mobile-grid-featured {
+    display: block;
+  }
+  .mobile-banner {
+    background: #000000a6
+      url(https://i.pinimg.com/236x/0e/07/80/0e0780cec5095b930a6e5043d683ec03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  .mobile-featured,
+  .mobile-banner-main {
+    max-width: 300px;
+    margin: 0px auto;
+  }
+  /* .mobile-banner-main {
+        padding-left: 24px;
+    } */
+  /* the riadmap styles */
+  .road-maps-icons {
+    margin: 0px auto;
+    max-width: 300px;
+  }
+
+  /* the footer responsive layout for smaller width */
+  footer.footer-desktop {
+    display: none;
+  }
+  footer.mobile-footer {
+    display: block;
+  }
+  .mani-grid {
+    margin: 0px auto;
+    max-width: 320px;
+  }
+}

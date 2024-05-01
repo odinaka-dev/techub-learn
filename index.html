@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-learning</title>
+    <!-- the link to the google font and the tailwind css tag -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/54f688b031.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- the tailwind config key -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Raleway", "sans-serif"],
+            mono: ["Roboto mono", "monospace"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="navigation bg-black text-white">
+      <!-- the navi  gation banner text -->
+      <nav
+        class="navigation-brand flex flex-row justify-between items-center p-5 m-auto max-w-screen-5xl"
+      >
+        <div class="nav-logo flex flex-row justify-between items-center">
+            <label class="logo font-mono font-bold text-white text-2xl capitalize mr-10">
+              Tech Hub</label>
+        </div>
+
+        <!-- the navigation list -->
+        <div class="nav-list">
+            <ul
+            class="list">
+              <li class="item item4"><a href="./index.html">Home</a></li>
+              <li class="item item3"><a href="./Features.html">Features</a></li>
+              <li class="item item4"><a href="./roadmap.html">Road maps</a></li>
+              <li class="item "><a href="./contact.html">Contact us</a></li>
+            </ul>
+              <!-- the harmburger -->
+            <div class="menu-bar icon-menu">
+              <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#ffff"></path></g></svg>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <!-- the body of the e-learning site begins from here on -->
+    <main class="grid-featured">
+      <article
+        class="featured grid grid-cols-4 grid-rows-2 gap-5 mt-5 mx-auto"
+        style="max-width: 1500px"
+      >
+        <!-- the first grid layout -->
+        <div class="grid-feat row-span-2 h-100 text-white bg-black p-3 rounded">
+          <div class="started py-2">
+            <!-- the documentation lists -->
+            <h1
+              class="text-black text-center bg-white py-3 px-8 font-bold rounded"
+            >
+              Get started
+            </h1>
+            <!-- the different list tag -->
+            <ul class="documentation-languages">
+              <li class="languages">
+                <i class="fa-brands fa-html5"></i> Html-hypertext markup
+                language
+              </li>
+              <li class="languages">
+                <i class="fa-brands fa-css3-alt"></i> cascading style sheet
+              </li>
+              <li class="languages">
+                <i class="fa-brands fa-js"></i> Javascript
+              </li>
+              <li class="languages">
+                <i class="fa-brands fa-css3-alt"></i> CSS frameworks
+              </li>
+            </ul>
+          </div>
+          <div class="todos bg-white text-black p-4 rounded">
+            <ol class="todos-list">
+              <li class="flex flex-row justify-between py-1 px-2 font-bold">
+                Create new todo <i class="fa-solid fa-trash delete"></i>
+              </li>
+              <li class="flex flex-row justify-between py-1 px-2 font-bold">
+                Learn Html5 <i class="fa-solid fa-trash delete"></i>
+              </li>
+              <li class="flex flex-row justify-between py-1 px-2 font-bold">
+                Learn Css3 <i class="fa-solid fa-trash delete"></i>
+              </li>
+              <li class="flex flex-row justify-between py-1 px-2 font-bold">
+                Learn Javascript <i class="fa-solid fa-trash delete"></i>
+              </li>
+            </ol>
+            <!-- the input and create todo button -->
+            <form class="createtodo my-2">
+              <input
+                type="text"
+                name="text"
+                placeholder="add-todo"
+                class="text-sm text-black py-2 px-8 pl-1 outline-none border border-0 border-gray-800 border-b-2 w-full"
+              />
+            </form>
+          </div>
+        </div>
+        <!-- the second grid -->
+        <div class="grid-features col-span-3">
+          <div class="featuring p-4">
+            <h1 class="uppercase font-bold font-mono text-4xl">start your journey</h1>
+            <p class="text-sm py-3">
+              Dive into the world of tech today, here at Tech Hub <br />
+              we provide tech documentations and resources that can help just <br>
+              anyone start their tech journey successively. clik the signup page and <br>
+              sign up so you can start your frontend journey.
+            </p>
+            <button class="btn-signs text-black bg-white font-bold p-2 rounded">
+              Sign up</button>
+          </div>
+        </div>
+        <div
+          class="grid-feature border border-l-2 border-l-orange-500 pl-2 p-3 mt-3"
+        >
+          <div class="text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100px"
+              height="100px"
+              viewBox="-52.5 0 361 361"
+              preserveAspectRatio="xMinYMin meet"
+            >
+              <path
+                d="M255.555 70.766l-23.241 260.36-104.47 28.962-104.182-28.922L.445 70.766h255.11z"
+                fill="#E44D26"
+              />
+              <path
+                d="M128 337.95l84.417-23.403 19.86-222.49H128V337.95z"
+                fill="#F16529"
+              />
+              <path
+                d="M82.82 155.932H128v-31.937H47.917l.764 8.568 7.85 88.01H128v-31.937H85.739l-2.919-32.704zM90.018 236.542h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58l-.14.037-35.568-9.604-2.274-25.471z"
+                fill="#EBEBEB"
+              />
+              <path
+                d="M24.18 0h16.23v16.035h14.847V0h16.231v48.558h-16.23v-16.26H40.411v16.26h-16.23V0zM92.83 16.103H78.544V0h44.814v16.103h-14.295v32.455h-16.23V16.103h-.001zM130.47 0h16.923l10.41 17.062L168.203 0h16.93v48.558h-16.164V24.49l-11.166 17.265h-.28L146.35 24.49v24.068h-15.88V0zM193.21 0h16.235v32.508h22.824v16.05h-39.06V0z"
+              />
+              <path
+                d="M127.89 220.573h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576H127.89v31.937zM127.89 155.854v.078h77.143l.64-7.178 1.456-16.191.763-8.568H127.89v31.86z"
+                fill="#FFF"
+              />
+            </svg>
+          </div>
+          <div class="html5">
+            <h2 class="uppercase font-bold">HTML5</h2>
+            <p class="text-gray-400 text-sm pb-2">
+              Html5 known as hypertext markup language.<b>HTML5</b> is the fifth
+              version of HTML with features you would get to learn about in this
+              course.
+            </p>
+            <button
+              class="btn-todos block text-white text-center bg-black px-10 py-1 mt-3 rounded"
+            >
+              <a href="Features.html">Learn more</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid-feature border border-l-2 border-l-blue-400 pl-2 p-3 mt-3"
+        >
+          <div class="text-center">
+            <svg
+              width="100px"
+              height="100px"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                <path
+                  d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                  fill="white"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="css3">
+            <h2 class="uppercase font-bold">CSS3</h2>
+            <p class="text-gray-400 text-sm pb-2">
+              Css3 significantly expand the possibilities for web design and
+              layout, it's easier for developers to create visually appealing
+              and web experiences.
+            </p>
+            <button
+              class="btn-todos block text-white text-center bg-black px-10 py-1 mt-3 rounded"
+            >
+              <a href="./Features.html">Learn more</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="grid-feature border border-l-2 border-l-yellow-500 pl-2 p-3 mt-3"
+        >
+          <div class="text-center">
+            <svg
+              width="100px"
+              height="100px"
+              viewBox="0 0 256 256"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M0,0 L256,0 L256,256 L0,256 L0,0 Z"
+                    fill="#F7DF1E"
+                  ></path>
+                  <path
+                    d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026"
+                    fill="#000000"
+                  ></path>
+                  <path
+                    d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
+                    fill="#000000"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="javascript6">
+            <h2 class="uppercase font-bold">Javascript</h2>
+            <p class="text-gray-400 text-sm pb-2">
+              Javascript is a high level programming languages that has diverse
+              use and features. It allows frontend developers to add dynamic
+              behavior to the web.
+            </p>
+            <button
+              class="btn-todos block text-white text-center bg-black px-10 py-1 mt-3 rounded"
+            >
+              <a href="./Features.html">Learn more</a>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- the mobile responsive web viewport html template  -->
+    <main class="mobile-grid-featured">
+      <!-- the dashboard of the mobile page -->
+      <div class="mobile-banner py-24 pb-16">
+        <div class="mobile-banner-main relative">
+          <h1 class="text-white text-2xl font-bold font-mono capitalize p-2 pt-0">
+            Learn frontend <br> languages</h1>
+            <p class="text-white text-md font-thin py-2" style="line-height: 1.6;">
+              Transition into tech today, a space with endless positivities.
+            </p>
+            <button class="signing-in text-black bg-white py-2 px-10 rounded-lg font-bold">
+              <a href="">Sign up</a>
+            </button>
+        </div>
+      </div>
+
+      <!-- other section of the mobile views -->
+      <!-- html -->
+      <article class="mobile-featured my-10">
+        <h2 class="border-0 border-l-2 border-l-black text-left text-2xl pl-2 my-5">Stacks</h2>
+        <div class="mobile-grid grid grid-cols-2 gap-8">
+          <div class="flex flex-col items-center border-0 border-l-2 border-orange-500 hover:border-b-2 hover:border-b-orange-500 duration-200">
+            <svg width="60px" height="60px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"/>
+              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/>
+              <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
+              </svg>
+              <p class="text-black font-thick font-mono py-2 capitalize"><a href="">Html5</a></p>
+          </div>
+          <!-- the css -->
+          <div class="flex flex-col items-center  border-0 border-l-2 border-l-blue-500 hover:border-b-2 hover:border-b-blue-500 duration">
+            <svg width="60px" height="60px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"/>
+              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"/>
+              <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"/>
+              </svg>
+              <p class="text-black font-thick font-mono py-2 capitalize"><a href="">Css3</a></p>
+          </div>
+          <!-- the javascript -->
+          <div class="flex flex-col items-center border-0 border-l-2 border-l-yellow-500 hover:border-b-2 hover:border-b-yellow-500 duration-200">
+            <svg width="50px" height="60px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <g>
+                  <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
+                  <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+                  <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"></path></g>
+          </svg>
+              <p class="text-black font-thick font-mono py-2 capitalize"><a href="">Javascript</a></p>
+          </div>
+          <!-- bootstrap -->
+          <div class="flex flex-col items-center border-0 border-l-2 border-l-purple-500 hover:border-b-2 hover:border-b-purple-500 duration-200">
+            <svg width="60px" height="60px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <g>
+                  <path d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z" fill="#563D7C">
+          
+          </path>
+                  <path d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z" fill="#FFFFFF">
+          
+          </path>
+              </g>
+          </svg>
+              <p class="text-black font-thick font-mono py-2 capitalize"><a href="">Bootstrap</a></p>
+          </div>
+          <!-- tailwind css -->
+          <div class="flex flex-col items-center border-0 border-l-2 border-l-blue-300  hover:border-b-2 hover:border-b-blue-300 duration-200">
+            <svg fill="#3e8fc1" width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" stroke="#3e8fc1">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <g id="SVGRepo_iconCarrier">
+              
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"/>
+              
+              </g>
+              
+              </svg>
+              <p class="text-black font-thick font-mono py-2 capitalize"><a href="">Tailwind</a></p>
+          </div>
+          <!-- the more icon -->
+          <div class="flex flex-col items-center rounded-lg shadow-lg">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 8L3 12L7 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 8L21 12L17 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 4L9.8589 19.4548" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            <p class="text-black font-thick font-mono py-2 capitalize"><a href="./roadmap.html">More</a></p>
+          </div>
+        </div>
+
+        <!-- other sections of the mobile homepage -->
+
+        <div class="write-up">
+          <h1 class="capitalize text-xl text-black my-3 mt-24 px-2 border-0 border-l-2 border-l-black font-mono">About the program</h1>
+          <div class="flex flex-col items-center">
+            <div class="py-2">
+              <img src="https://i.pinimg.com/236x/c3/09/1a/c3091a577b9cafa83331da80ff514138.jpg" alt="writeup-img"
+              class="py-3 mt-5"/>
+            </div>
+            <div class="text">
+              <h1 class="capitalize text-lg text-black my-2 mt-4 font-bold  hover:text-gray-800 duration-200">
+              Join us today</h1>
+              <p class="text-black font-sans  text-sm" style="line-height: 1.6;">
+                Join our tech hub program and become a techie on his/her journey to pro / genius level in the frontend 
+                development aspect of tech. Bring your creativity, possibilities, and endless engineering ideals to life.
+                we have every resource open to all who joins our community to learn tech and get good at it here at tech hub.
+              </p>
+              <button class="block text-white bg-black py-2 px-10 mt-5 rounded-lg shadow-md"><a href="./Features.html">Features</a></button>
+            </div>
+          </div>
+        </div>
+        <!-- the faq section about the program -->
+        <div class="faq accordion-section py-20">
+          <!-- the main faq list -->
+          <h1 class="uppercase text-xl text-black font-bold my-3 mt-24 mb-10 px-2 border-0 border-l-2 border-l-black font-mono">Frequently asked questions</h1>
+          <div class="faq">
+            <div class="faq-icons flex flex-row justify-between items-center text-black font-bold font-mono py-5 px-3 mt-3 border-0 border-b-2 border-b-gray-400">
+              <div class="">what is tech hub?</div>
+              <div class="faq-icons">
+                <!-- the plus -->
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#000000"></path></g></svg>
+                <!-- the  minus bar -->
+                <svg class="minus hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13H5v-2h14v2z" fill="#000000"></path></g></svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              <p class="faq-contents hidden font-sans text-gray-600 text-sm mt-3" style="line-height: 1.6;">
+                Tech hub is an online documentation platform that provides new or existing (but not satisfied) techies with the basic documents 
+                required for them to study and become massive techies.  It tracks techies progress as it helps them to navigate their progress through 
+                a detailed road map brochure.
+              </p>
+            </div>
+          </div>
+          <!-- the second -->
+          <div class="faq">
+            <div class="faq-icons flex flex-row justify-between items-center text-black font-bold font-mono py-5 px-3 mt-3 border-0 border-b-2 border-b-gray-400">
+              <div class="">How do I get started?</div>
+              <div class="faq-icons">
+                <!-- the plups -->
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#000000"></path></g></svg>
+                <!-- the  minus bar -->
+                <svg  class="minus hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13H5v-2h14v2z" fill="#000000"></path></g></svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              <p class="faq-contents mt-3 hidden font-sans text-gray-600 text-sm" style="line-height: 1.6;">
+                Log-into our  website and pick any available course (web based courses) and start reading through the process.
+                you can select any and every documentation. All resources are free and accessible to all users of the website.
+              </p>
+            </div>
+          </div>
+          <!-- the third -->
+          <div class="faq">
+            <div class="faq-icons flex flex-row justify-between items-center text-black font-bold font-mono py-5 px-3 mt-3 border-0 border-b-2 border-b-gray-400">
+              <div class="">Are the resources Free?</div>
+              <div class="faq-icons">
+                <!-- the plups -->
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#000000"></path></g></svg>
+                <!-- the  minus bar -->
+                <svg  class="minus hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13H5v-2h14v2z" fill="#000000"></path></g></svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              <p class="faq-contents mt-3 hidden font-sans text-gray-600 text-sm" style="line-height: 1.6;">
+                All resources are free and accessible to all users of the website. Every documents 
+                on this website are open and free to all.  Your commitment to learn is all that is needed.
+              </p>
+            </div>
+          </div>
+          <!-- the fourth -->
+          <div class="faq">
+            <div class="faq-icons flex flex-row justify-between items-center text-black font-bold font-mono py-5 px-3 mt-3 border-0 border-b-2 border-b-gray-400">
+              <div class="">Is there a certificate upon completion?</div>
+              <div class="faq-icons">
+                <!-- the plups -->
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#000000"></path></g></svg>
+                <!-- the  minus bar -->
+                <svg  class="minus hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13H5v-2h14v2z" fill="#000000"></path></g></svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              <p class="faq-contents mt-3 hidden font-sans text-gray-600 text-sm" style="line-height: 1.6;">
+                    There is no certificate upon completion of the courses on this website. However you can share what you learn online as well as solve problems 
+                    with the skill you will possess upon completion of the course on this website.
+              </p>
+            </div>
+          </div>
+          <!-- the fifth -->
+          <div class="faq">
+            <div class="faq-icons flex flex-row justify-between items-center text-black font-bold font-mono py-5 px-3 mt-3 border-0 border-b-2 border-b-gray-400">
+              <div class="">Is  it a lifetime access?</div>
+              <div class="faq-icons">
+                <!-- the plups -->
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#000000"></path></g></svg>
+                <!-- the  minus bar -->
+                <svg  class="minus hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="nc-icon-wrapper"><path d="M19 13H5v-2h14v2z" fill="#000000"></path></g></svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              <p class="faq-contents mt-3 hidden font-sans text-gray-600 text-sm" style="line-height: 1.6;">
+                Yes, it is a lifetime access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- the sign up bar page -->
+    <section class="signup-page bg-white border border-0 rounded-lg py-6 px-5 shadow-2xl">
+      <h1 class="text-black font-mono font-bold text-3xl text-center capitalize py-3">
+        Log-in</h1>
+      <p class="capitalize text-gray-600 text-center"><b>Enter your personal information</b></p>
+      <form action="" class="signup">
+        <!-- theusername -->
+        <h2 class="text-black capitalize text-1xl ml-3 mt-6 font-bold">Username</h2>
+        <div class="flex">
+          <input type="username" name="username"  placeholder="Enter your username" required 
+          class="username"/>
+          <svg class="tick" width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path d="M5.5 12.5L10.167 17L19.5 8" stroke="#00ff91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            
+            </svg>
+            <!-- the warning icon -->
+            <svg class="warning" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fd0808">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.768"/>
+              
+              <g id="SVGRepo_iconCarrier"> <path d="M12 16.99V17M12 7V14M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#ed0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+              
+              </svg> 
+        </div>
+
+        <!-- the password -->
+        <h2 class="text-black capitalize text-1xl ml-3 mt-6 font-bold">password</h2>
+        <div class="flex">
+        <input type="password" name="password" class="password" placeholder="Enter your password" required />
+        <svg class="tick" width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          
+          <g id="SVGRepo_iconCarrier"> <path d="M5.5 12.5L10.167 17L19.5 8" stroke="#00ff91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+          
+        </svg>
+          <!-- the warning icon -->
+          <svg class="warning" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fd0808">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.768"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path d="M12 16.99V17M12 7V14M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#ed0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            
+          </svg> 
+        </div>
+        <h2 class="text-black capitalize text-1xl ml-3 mt-6 font-bold">e-mail</h2>
+        <div class="flex">
+        <input type="email" name="email" class="email" placeholder="Enter your email" required/>
+        <svg class="tick" width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          
+          <g id="SVGRepo_iconCarrier"> <path d="M5.5 12.5L10.167 17L19.5 8" stroke="#00ff91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+          
+        </svg>
+          <!-- the warning icon -->
+          <svg class="warning" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fd0808">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.768"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path d="M12 16.99V17M12 7V14M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#ed0c0c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+            
+          </svg> 
+        </div>
+        <input type="submit" name="submit" value="submit" class="submit text-white bg-black rounded-md">
+      </form>
+      <p  class="text-gray-600 font-sans font-bold text-center py-2"><a href="#">Connect with us online</a></p>
+    </section>
+
+    <!-- the footer of the entire navigation page begins from here -->
+    <footer class="bg-black text-white py-10 px-0 mt-10 footer-desktop">
+      <div class="footer-total max-w-screen-xl mx-auto grid grid-cols-4">
+        <div class="footer-one">
+          <label class="logo-two font-mono font-bold text-3xl capitalize">Tech hub</label>
+          <p class="font-thin text-sm ">
+            We are all about helping you startup your tech journey as well as your tech dreams successively
+            From installation to understanding how to write your first <b>HELLO WORLD</b>, every resources
+            are in the documentation of this website for simple web creation.
+          </p>
+          <p class="text-white font-thin text-sm mt-10">copyrights 2024</p>
+        </div>
+        <!-- the navigation home pages -->
+        <div class="footer-list footer-one ml-5">
+          <ol class="footer-sublist">
+            <li class="pt-0"><a href="">Home</a></li>
+            <li class="pt-3"><a href="">Courses</a></li>
+            <li class="pt-3"><a href="">Roadmap</a></li>
+            <li class="pt-3"><a href="">Features</a></li>
+            <li class="pt-3"><a href="">let's connect</a></li>
+          </ol>
+        </div>
+        <!-- the contact us page -->
+        <div class="footer-list footer-two ml-5">
+          <ol class="footer-sublist">
+            <li class="pt-3"><a href="">MDN resources</a></li>
+            <li class="pt-3"><a href="">connect with us on x</a></li>
+            <li class="pt-3"><a href="">About the developer</a></li>
+          </ol>
+        </div>
+        <div class="footer-list footer-three">
+          <div class="contactUs" id="contact-us">
+            <form action="" class="contact-form">
+              <textarea name="text" id="text-contact" cols="30" rows="3" 
+              class="block text-black my-5 p-3 border-0 rounded-lg outline-none" placeholder="Contact us..."></textarea>
+              <button class="btn-contact block text-black bg-white font-bold py-3 px-5 rounded-lg"><a href="">Contact Us</a></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- the footer for the mobile view -->
+    <footer class="mobile-footer text-white bg-black py-8 px-0 mt-0">
+      <div class="mani-grid grid grid-cols-2 text-left">
+        <div class="footer-one col-span-2">
+          <label class="logo-two font-mono font-bold text-3xl capitalize">Tech hub</label>
+          <p class="font-thin text-sm ">
+            We are all about helping you startup your tech journey as well as your tech dreams successively
+            From installation to understanding how to write your first <b>HELLO WORLD</b>, every resources
+            are in the documentation of this website for simple web creation.
+          </p>
+        </div>
+        <!-- the navigation -->
+        <div class="footer-list footer-one ml-3 mt-4">
+          <ol class="footer-sublist">
+            <li class="pt-0"><a href="">Home</a></li>
+            <li class="pt-3"><a href="">Courses</a></li>
+            <li class="pt-3"><a href="">Roadmap</a></li>
+            <li class="pt-3"><a href="">Features</a></li>
+            <li class="pt-3"><a href="">let's connect</a></li>
+          </ol>
+        </div>
+        <!-- the contact us page -->
+        <div class="footer-list footer-two ml-3 mt-4">
+          <ol class="footer-sublist">
+            <li class="pt-3"><a href="">MDN resources</a></li>
+            <li class="pt-3"><a href="">connect with us</a></li>
+            <li class="pt-3"><a href="">About the developer</a></li>
+          </ol>
+        </div>
+        <!-- the supplementary footer -->
+        <div class="footerss">
+          <div>
+            <img src="./asset/socials/icon-facebook.svg" alt="" class="itemsimg px-2 inline mt-5">
+            <img src="./asset/socials/icon-instagram.svg" alt="" class="itemsimg px-2 inline mt-5">
+            <img src="./asset/socials/icon-twitter.svg" alt="" class="itemsimg px-2 inline mt-5">
+            <img src="./asset/socials/icon-youtube.svg" alt="" class="itemsimg px-2 inline mt-5">
+          </div>
+          <!-- copyrights -->
+          <p class="text-white font-thin text-sm mt-5">copyrights 2024</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
